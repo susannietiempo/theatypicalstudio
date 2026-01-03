@@ -329,7 +329,8 @@ export default function ServicesPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
+                  {/* Rein Filosopo - Hidden */}
+                  {/* <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
                     <div className="flex flex-col sm:flex-row items-start gap-4">
                       <div className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface flex items-center justify-center text-[10px] font-sans uppercase tracking-wide text-secondary">
                         Headshot
@@ -351,8 +352,9 @@ export default function ServicesPage() {
                         </TextBlock>
                       </div>
                     </div>
-                  </div>
-                  <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
+                  </div> */}
+                  {/* Mariel Anne Filosopo - Hidden */}
+                  {/* <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
                     <div className="flex flex-col sm:flex-row items-start gap-4">
                       <div className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface flex items-center justify-center text-[10px] font-sans uppercase tracking-wide text-secondary">
                         Headshot
@@ -374,7 +376,7 @@ export default function ServicesPage() {
                         </TextBlock>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
                     <div className="flex flex-col sm:flex-row items-start gap-4">
                       <div
