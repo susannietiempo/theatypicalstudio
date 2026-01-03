@@ -4,7 +4,7 @@ import { Container } from "./Container";
 export function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 bg-transparent">
-      <Container>
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex items-center justify-between py-6 md:py-8">
           {/* Logo */}
           <Link href="/" aria-label="The Atypical Studio home">
@@ -37,7 +37,7 @@ export function Header() {
             </Link>
           </nav>
         </div>
-      </Container>
+      </div>
     </header>
   );
 }

@@ -109,7 +109,7 @@ export default function EvolvingExistingProductPage() {
                 Does this approach sound right for your needs?
               </Heading>
               <p className="font-serif text-lg text-inverse opacity-90 max-w-2xl mx-auto">
-                Every engagement is different, but the collaborative mindset stays the same. Let's discuss whether we might be a fit.
+                Every engagement is different, but the collaborative mindset stays the same. Let&apos;s discuss whether we might be a fit.
               </p>
               <div className="pt-4">
                 <CTA href="/start-a-conversation" />

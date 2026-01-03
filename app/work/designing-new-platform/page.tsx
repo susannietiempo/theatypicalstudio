@@ -49,7 +49,7 @@ export default function DesigningNewPlatformPage() {
                     A technical founder had a clear vision for a new platform but needed help translating that vision into a robust technical foundation. They understood the problem space deeply but wanted a partner to collaborate on the system design and initial implementation.
                   </p>
                   <p>
-                    The challenge wasn't just building features—it was establishing the right architectural patterns from the start so the platform could grow sustainably as the product evolved.
+                    The challenge wasn&apos;t just building features—it was establishing the right architectural patterns from the start so the platform could grow sustainably as the product evolved.
                   </p>
                 </TextBlock>
               </div>
@@ -109,7 +109,7 @@ export default function DesigningNewPlatformPage() {
                 Does this approach sound right for your needs?
               </Heading>
               <p className="font-serif text-lg text-inverse opacity-90 max-w-2xl mx-auto">
-                Every engagement is different, but the collaborative mindset stays the same. Let's discuss whether we might be a fit.
+                Every engagement is different, but the collaborative mindset stays the same. Let&apos;s discuss whether we might be a fit.
               </p>
               <div className="pt-4">
                 <CTA href="/start-a-conversation" />

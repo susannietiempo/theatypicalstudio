@@ -49,7 +49,7 @@ export default function RebuildingCoreSystemPage() {
                     A growing company was running a critical data processing pipeline that had been built incrementally over several years. The system worked, but it had become difficult to modify, prone to silent failures, and required deep tribal knowledge to maintain.
                   </p>
                   <p>
-                    The team knew they needed to refactor, but they couldn't afford downtime or data loss. They needed a partner who could understand the existing system, navigate the constraints, and design a path forward that wouldn't disrupt their operations.
+                    The team knew they needed to refactor, but they couldn&apos;t afford downtime or data loss. They needed a partner who could understand the existing system, navigate the constraints, and design a path forward that wouldn&apos;t disrupt their operations.
                   </p>
                 </TextBlock>
               </div>
@@ -88,7 +88,7 @@ export default function RebuildingCoreSystemPage() {
                 <h2 className="font-sans text-2xl font-black text-primary mb-4">Why It Mattered</h2>
                 <TextBlock>
                   <p className="mb-4">
-                    This wasn't just a technical refactoring. It reduced operational stress, freed the team to focus on building new capabilities, and gave them confidence in their infrastructure.
+                    This wasn&apos;t just a technical refactoring. It reduced operational stress, freed the team to focus on building new capabilities, and gave them confidence in their infrastructure.
                   </p>
                   <p>
                     The partnership worked because we took the time to understand their constraints and collaborated on an approach that fit their reality. The outcome was better because we built it together.
@@ -109,7 +109,7 @@ export default function RebuildingCoreSystemPage() {
                 Does this approach sound right for your needs?
               </Heading>
               <p className="font-serif text-lg text-inverse opacity-90 max-w-2xl mx-auto">
-                Every engagement is different, but the collaborative mindset stays the same. Let's discuss whether we might be a fit.
+                Every engagement is different, but the collaborative mindset stays the same. Let&apos;s discuss whether we might be a fit.
               </p>
               <div className="pt-4">
                 <CTA href="/start-a-conversation" />

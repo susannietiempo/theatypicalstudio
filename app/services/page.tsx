@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { Grid } from "@/components/layout/Grid";
@@ -11,8 +14,18 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SectionBackground } from "@/components/ui/SectionBackground";
 import { PageConnections } from "@/components/ui/PageConnections";
+import { ImageModal } from "@/components/ui/ImageModal";
 
 export default function ServicesPage() {
+  const [modalImage, setModalImage] = useState<{ src: string; alt: string } | null>(null);
+
+  const openModal = (src: string, alt: string) => {
+    setModalImage({ src, alt });
+  };
+
+  const closeModal = () => {
+    setModalImage(null);
+  };
   return (
     <div className="relative">
       <PageConnections />
@@ -28,7 +41,7 @@ export default function ServicesPage() {
                 How we work, who we are.
               </h1>
               <p className="font-sans text-lg md:text-xl text-inverse opacity-90">
-                We're a small team that values partnership over process. Here's what that means in practice.
+                We&apos;re a small team that values partnership over process. Here&apos;s what that means in practice.
               </p>
             </div>
           </Reveal>
@@ -64,10 +77,13 @@ export default function ServicesPage() {
 
               {/* Team Photos */}
               <div className="pt-6">
-                <div className="max-w-4xl mx-auto space-y-3">
-                  <div className="rounded-2xl bg-surface border border-border overflow-hidden">
+                <div className="max-w-md mx-auto space-y-3">
+                  <div
+                    className="rounded-2xl bg-surface border border-border overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
+                    onClick={() => openModal("/images/team/team-photo.png", "The Atypical Studio Team")}
+                  >
                     <img
-                      src="/images/team/team-photo.jpg"
+                      src="/images/team/team-photo.png"
                       alt="The Atypical Studio Team"
                       className="w-full h-auto"
                     />
@@ -222,7 +238,10 @@ export default function ServicesPage() {
                 <Grid cols={2} gap="tight">
                   <div className="rounded-2xl border border-border bg-page p-6 shadow-sm md:col-span-2 md:max-w-3xl md:mx-auto">
                     <div className="flex flex-col sm:flex-row items-start gap-4">
-                      <div className="h-20 w-20 md:h-24 md:w-24 rounded-full border border-border bg-surface overflow-hidden">
+                      <div
+                        className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all"
+                        onClick={() => openModal("/images/team/susannie-tiempo.jpeg", "Susannie Tiempo headshot")}
+                      >
                         <img
                           src="/images/team/susannie-tiempo.jpeg"
                           alt="Susannie Tiempo headshot"
@@ -250,7 +269,10 @@ export default function ServicesPage() {
                   </div>
                   <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
                     <div className="flex flex-col sm:flex-row items-start gap-4">
-                      <div className="h-20 w-20 md:h-24 md:w-24 rounded-full border border-border bg-surface overflow-hidden">
+                      <div
+                        className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all"
+                        onClick={() => openModal("/images/team/grethel-bacundator.jpeg", "Grethel Bacunador headshot")}
+                      >
                         <img
                           src="/images/team/grethel-bacundator.jpeg"
                           alt="Grethel Bacunador headshot"
@@ -278,7 +300,10 @@ export default function ServicesPage() {
                   </div>
                   <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
                     <div className="flex flex-col sm:flex-row items-start gap-4">
-                      <div className="h-20 w-20 md:h-24 md:w-24 rounded-full border border-border bg-surface overflow-hidden">
+                      <div
+                        className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all"
+                        onClick={() => openModal("/images/team/noemi-camaro.jpeg", "Noemi Camero headshot")}
+                      >
                         <img
                           src="/images/team/noemi-camaro.jpeg"
                           alt="Noemi Camero headshot"
@@ -306,7 +331,7 @@ export default function ServicesPage() {
                   </div>
                   <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
                     <div className="flex flex-col sm:flex-row items-start gap-4">
-                      <div className="h-20 w-20 md:h-24 md:w-24 rounded-full border border-border bg-surface flex items-center justify-center text-[10px] font-sans uppercase tracking-wide text-secondary">
+                      <div className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface flex items-center justify-center text-[10px] font-sans uppercase tracking-wide text-secondary">
                         Headshot
                       </div>
                       <div className="space-y-3">
@@ -329,7 +354,7 @@ export default function ServicesPage() {
                   </div>
                   <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
                     <div className="flex flex-col sm:flex-row items-start gap-4">
-                      <div className="h-20 w-20 md:h-24 md:w-24 rounded-full border border-border bg-surface flex items-center justify-center text-[10px] font-sans uppercase tracking-wide text-secondary">
+                      <div className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface flex items-center justify-center text-[10px] font-sans uppercase tracking-wide text-secondary">
                         Headshot
                       </div>
                       <div className="space-y-3">
@@ -352,7 +377,10 @@ export default function ServicesPage() {
                   </div>
                   <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
                     <div className="flex flex-col sm:flex-row items-start gap-4">
-                      <div className="h-20 w-20 md:h-24 md:w-24 rounded-full border border-border bg-surface overflow-hidden">
+                      <div
+                        className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all"
+                        onClick={() => openModal("/images/team/mariel-jasmin-orais.jpeg", "Mariel Jasmin Orais headshot")}
+                      >
                         <img
                           src="/images/team/mariel-jasmin-orais.jpeg"
                           alt="Mariel Jasmin Orais headshot"
@@ -380,7 +408,10 @@ export default function ServicesPage() {
                   </div>
                   <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
                     <div className="flex flex-col sm:flex-row items-start gap-4">
-                      <div className="h-20 w-20 md:h-24 md:w-24 rounded-full border border-border bg-surface overflow-hidden">
+                      <div
+                        className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all"
+                        onClick={() => openModal("/images/team/drexter-sembreno.jpeg", "Drexter Sembreno headshot")}
+                      >
                         <img
                           src="/images/team/drexter-sembreno.jpeg"
                           alt="Drexter Sembreno headshot"
@@ -431,7 +462,7 @@ export default function ServicesPage() {
           <Reveal variant="fadeIn">
             <div className="text-center space-y-6">
               <Heading level={2} tone="inverse">
-                If this sounds like a fit, let's talk.
+                If this sounds like a fit, let&apos;s talk.
               </Heading>
               <p className="font-serif text-lg text-inverse opacity-90 max-w-2xl mx-auto">
                 No sales pitch. No urgency. Just a thoughtful conversation about whether we might work well together.
@@ -445,6 +476,13 @@ export default function ServicesPage() {
       </Section>
 
       <Footer />
+
+      <ImageModal
+        isOpen={modalImage !== null}
+        onClose={closeModal}
+        imageSrc={modalImage?.src || ""}
+        imageAlt={modalImage?.alt || ""}
+      />
     </div>
   );
 }

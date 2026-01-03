@@ -108,10 +108,10 @@ export default function WorkPage() {
           <Reveal variant="fadeIn">
             <div className="text-center space-y-6">
               <Heading level={2} tone="inverse">
-                If these stories resonate, let's talk.
+                If these stories resonate, let&apos;s talk.
               </Heading>
               <p className="font-serif text-lg text-inverse opacity-90 max-w-2xl mx-auto">
-                These are simplified examples. Real engagements are more nuanced—let's discuss whether we might be a fit for your needs.
+                These are simplified examples. Real engagements are more nuanced—let&apos;s discuss whether we might be a fit for your needs.
               </p>
               <div className="pt-4">
                 <CTA href="/start-a-conversation" />
