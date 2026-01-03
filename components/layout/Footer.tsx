@@ -21,7 +21,7 @@ export function Footer() {
             </p>
           </div>
 
-          <nav className="flex flex-col gap-4 md:flex-row md:gap-8">
+          <nav className="grid grid-cols-2 gap-6 sm:gap-8 md:flex md:flex-row md:gap-8">
             <div className="space-y-2">
               <h4 className="font-sans text-sm font-semibold text-inverse mb-2">
                 Navigation
