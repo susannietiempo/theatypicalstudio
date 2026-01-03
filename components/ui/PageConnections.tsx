@@ -60,7 +60,7 @@ export function PageConnections() {
   ];
 
   return (
-    <div className="absolute inset-0 pointer-events-none z-0 opacity-20 md:opacity-100 md:z-[60]" aria-hidden="true">
+    <div className="absolute inset-0 pointer-events-none z-0 opacity-15 md:opacity-100 md:z-[60]" aria-hidden="true">
       <svg
         className="absolute inset-0 h-full w-full"
         xmlns="http://www.w3.org/2000/svg"

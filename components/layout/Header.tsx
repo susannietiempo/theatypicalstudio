@@ -37,7 +37,7 @@ export function Header() {
             <img
               src="/images/atypical-studio-logo-inverse.svg"
               alt="The Atypical Studio"
-              className="h-16 w-auto sm:h-18 md:h-16 lg:h-20 transition-opacity hover:opacity-80"
+              className="h-[44px] md:h-16 lg:h-20 transition-opacity hover:opacity-80"
             />
           </Link>
 
