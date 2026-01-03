@@ -54,13 +54,13 @@ export function PageConnections() {
       core: 18,
       center: 9,
       halo: 80,
-      opacity: 1,
+      opacity: 0.6,
       radii: ["45% 55% 42% 58%", "55% 45% 57% 43%", "53% 47% 45% 55%"],
     },
   ];
 
   return (
-    <div className="absolute inset-0 pointer-events-none z-[60]" aria-hidden="true">
+    <div className="absolute inset-0 pointer-events-none z-0 opacity-5 md:opacity-100 md:z-[60]" aria-hidden="true">
       <svg
         className="absolute inset-0 h-full w-full"
         xmlns="http://www.w3.org/2000/svg"
@@ -68,21 +68,21 @@ export function PageConnections() {
         preserveAspectRatio="none"
       >
         <defs>
-          {/* Main gradient - subtle at top, intensifies downward */}
+          {/* Main gradient - subtle at top, peaks in middle, fades at bottom */}
           <linearGradient id="leyline-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor="#C67B5C" stopOpacity="0.15" />
             <stop offset="30%" stopColor="#F5F3EF" stopOpacity="0.2" />
-            <stop offset="60%" stopColor="#C67B5C" stopOpacity="0.4" />
-            <stop offset="85%" stopColor="#F5F3EF" stopOpacity="0.7" />
-            <stop offset="100%" stopColor="#F5F3EF" stopOpacity="0.9" />
+            <stop offset="60%" stopColor="#C67B5C" stopOpacity="0.5" />
+            <stop offset="80%" stopColor="#F5F3EF" stopOpacity="0.4" />
+            <stop offset="100%" stopColor="#C67B5C" stopOpacity="0.15" />
           </linearGradient>
 
-          {/* Footer boost gradient - only visible in bottom section */}
+          {/* Footer boost gradient - softer at bottom */}
           <linearGradient id="footer-boost" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor="#C67B5C" stopOpacity="0" />
-            <stop offset="75%" stopColor="#C67B5C" stopOpacity="0.3" />
-            <stop offset="90%" stopColor="#F5F3EF" stopOpacity="0.8" />
-            <stop offset="100%" stopColor="#F5F3EF" stopOpacity="1" />
+            <stop offset="60%" stopColor="#C67B5C" stopOpacity="0.2" />
+            <stop offset="85%" stopColor="#F5F3EF" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="#F5F3EF" stopOpacity="0.1" />
           </linearGradient>
 
           {/* Soft glow filter */}

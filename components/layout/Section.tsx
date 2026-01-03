@@ -17,10 +17,10 @@ export function Section({
   cta = false,
 }: SectionProps) {
   const paddingClass = cta
-    ? "py-20 md:py-28"
+    ? "py-12 sm:py-16 md:py-20 lg:py-28"
     : dense
-    ? "py-12 md:py-16"
-    : "py-16 md:py-24";
+    ? "py-8 sm:py-12 md:py-16"
+    : "py-12 sm:py-16 md:py-20 lg:py-24";
 
   const backgroundClass =
     variant === "dark"

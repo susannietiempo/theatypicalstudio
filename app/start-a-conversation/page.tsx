@@ -22,15 +22,15 @@ export default function StartAConversationPage() {
       <PageConnections />
       <Header />
       {/* Hero / Framing */}
-      <section className="relative overflow-hidden bg-dark text-inverse min-h-[60vh] flex items-center">
+      <section className="relative overflow-hidden bg-dark text-inverse min-h-[60vh] flex items-center pt-20 md:pt-0">
         <SectionBackground variant="convergence-glow" position="center" />
-        <Container className="relative z-10">
+        <Container className="relative z-10 py-12 md:py-0">
           <Reveal>
-            <div className="space-y-6 max-w-3xl">
-              <h1 className="font-sans text-4xl md:text-5xl font-black tracking-tight text-inverse">
+            <div className="space-y-4 sm:space-y-6 max-w-3xl">
+              <h1 className="font-sans text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-inverse leading-tight">
                 Start a conversation
               </h1>
-              <p className="font-sans text-lg md:text-xl text-inverse opacity-90">
+              <p className="font-sans text-base sm:text-lg md:text-xl text-inverse opacity-90 leading-relaxed">
                 If this feels like a fit, we&apos;d like to hear from you.
                 Tell us about what you&apos;re working on and what you&apos;re looking for.
                 We&apos;ll review your message and respond thoughtfully.
@@ -95,7 +95,7 @@ export default function StartAConversationPage() {
                   href="https://www.linkedin.com/company/theatypicalstudio"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-borderStrong px-6 py-3 text-sm font-semibold text-primary hover:bg-surface transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-borderStrong px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-semibold text-primary hover:bg-surface transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 min-h-[44px] touch-manipulation"
                 >
                   <svg
                     className="w-5 h-5"

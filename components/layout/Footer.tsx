@@ -88,14 +88,14 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-inverse/20">
-          <div className="flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
-            <p className="font-sans text-sm text-inverse opacity-60">
+        <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-inverse/20">
+          <div className="flex flex-col gap-4 sm:gap-6 md:flex-row md:justify-between md:items-center">
+            <p className="font-sans text-xs sm:text-sm text-inverse opacity-60">
               © {new Date().getFullYear()} The Atypical Studio. All rights reserved.
             </p>
             <Link
               href="/start-a-conversation"
-              className="inline-flex items-center justify-center rounded-xl border border-inverse/30 px-5 py-3 text-sm font-semibold text-inverse hover:bg-inverse/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
+              className="inline-flex items-center justify-center rounded-xl border border-inverse/30 px-5 py-3 text-sm font-semibold text-inverse hover:bg-inverse/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-dark min-h-[44px] touch-manipulation"
             >
               Start a conversation
             </Link>

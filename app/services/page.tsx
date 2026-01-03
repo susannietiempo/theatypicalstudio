@@ -32,15 +32,15 @@ export default function ServicesPage() {
       <Header />
 
       {/* Hero / Intro Section */}
-      <section className="relative overflow-hidden bg-dark text-inverse min-h-[60vh] flex items-center">
+      <section className="relative overflow-hidden bg-dark text-inverse min-h-[60vh] flex items-center pt-20 md:pt-0">
         <SectionBackground variant="convergence-glow" position="center" />
-        <Container className="relative z-10">
+        <Container className="relative z-10 py-12 md:py-0">
           <Reveal>
-            <div className="space-y-6 max-w-3xl">
-              <h1 className="font-sans text-4xl md:text-5xl font-black tracking-tight text-inverse">
+            <div className="space-y-4 sm:space-y-6 max-w-3xl">
+              <h1 className="font-sans text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-inverse leading-tight">
                 How we work, who we are.
               </h1>
-              <p className="font-sans text-lg md:text-xl text-inverse opacity-90">
+              <p className="font-sans text-base sm:text-lg md:text-xl text-inverse opacity-90 leading-relaxed">
                 We&apos;re a small team that values partnership over process. Here&apos;s what that means in practice.
               </p>
             </div>
@@ -110,8 +110,8 @@ export default function ServicesPage() {
           <StaggerGroup>
             <Grid cols={3}>
               <StaggerItem>
-                <div className="bg-page rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-border">
-                  <h3 className="font-sans text-2xl font-black text-primary mb-4">
+                <div className="bg-page rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow border border-border">
+                  <h3 className="font-sans text-xl sm:text-2xl font-black text-primary mb-3 sm:mb-4">
                     Custom Websites
                   </h3>
                   <TextBlock>
@@ -128,8 +128,8 @@ export default function ServicesPage() {
                 </div>
               </StaggerItem>
               <StaggerItem>
-                <div className="bg-page rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-border">
-                  <h3 className="font-sans text-2xl font-black text-primary mb-4">
+                <div className="bg-page rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow border border-border">
+                  <h3 className="font-sans text-xl sm:text-2xl font-black text-primary mb-3 sm:mb-4">
                     Automation & Workflow Tools
                   </h3>
                   <TextBlock>
@@ -146,8 +146,8 @@ export default function ServicesPage() {
                 </div>
               </StaggerItem>
               <StaggerItem>
-                <div className="bg-page rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-border">
-                  <h3 className="font-sans text-2xl font-black text-primary mb-4">
+                <div className="bg-page rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow border border-border">
+                  <h3 className="font-sans text-xl sm:text-2xl font-black text-primary mb-3 sm:mb-4">
                     Custom Software Solutions
                   </h3>
                   <TextBlock>
@@ -235,11 +235,11 @@ export default function ServicesPage() {
               </div>
 
               <div className="max-w-5xl mx-auto">
-                <Grid cols={2} gap="tight">
-                  <div className="rounded-2xl border border-border bg-page p-6 shadow-sm md:col-span-2 md:max-w-3xl md:mx-auto">
-                    <div className="flex flex-col sm:flex-row items-start gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                  <div className="rounded-2xl border border-border bg-page p-4 sm:p-6 shadow-sm sm:col-span-2 sm:max-w-3xl sm:mx-auto">
+                    <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                       <div
-                        className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all"
+                        className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all flex-shrink-0"
                         onClick={() => openModal("/images/team/susannie-tiempo.jpeg", "Susannie Tiempo headshot")}
                       >
                         <img
@@ -249,9 +249,9 @@ export default function ServicesPage() {
                           loading="lazy"
                         />
                       </div>
-                      <div className="space-y-3">
+                      <div className="space-y-2 sm:space-y-3 flex-1 min-w-0">
                         <div>
-                          <h4 className="font-sans text-xl font-black text-primary">Susannie Tiempo</h4>
+                          <h4 className="font-sans text-lg sm:text-xl font-black text-primary">Susannie Tiempo</h4>
                           <p className="font-sans text-xs uppercase tracking-wide text-secondary mt-1">
                             Founder, Quality & Product Development Lead
                           </p>
@@ -267,10 +267,10 @@ export default function ServicesPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
-                    <div className="flex flex-col sm:flex-row items-start gap-4">
+                  <div className="rounded-2xl border border-border bg-page p-4 sm:p-6 shadow-sm">
+                    <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                       <div
-                        className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all"
+                        className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all flex-shrink-0"
                         onClick={() => openModal("/images/team/grethel-bacundator.jpeg", "Grethel Bacunador headshot")}
                       >
                         <img
@@ -280,9 +280,9 @@ export default function ServicesPage() {
                           loading="lazy"
                         />
                       </div>
-                      <div className="space-y-3">
+                      <div className="space-y-2 sm:space-y-3 flex-1 min-w-0">
                         <div>
-                          <h4 className="font-sans text-xl font-black text-primary">Grethel Bacunador</h4>
+                          <h4 className="font-sans text-lg sm:text-xl font-black text-primary">Grethel Bacunador</h4>
                           <p className="font-sans text-xs uppercase tracking-wide text-secondary mt-1">
                             Operations Lead
                           </p>
@@ -298,10 +298,10 @@ export default function ServicesPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
-                    <div className="flex flex-col sm:flex-row items-start gap-4">
+                  <div className="rounded-2xl border border-border bg-page p-4 sm:p-6 shadow-sm">
+                    <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                       <div
-                        className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all"
+                        className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all flex-shrink-0"
                         onClick={() => openModal("/images/team/noemi-camaro.jpeg", "Noemi Camero headshot")}
                       >
                         <img
@@ -311,9 +311,9 @@ export default function ServicesPage() {
                           loading="lazy"
                         />
                       </div>
-                      <div className="space-y-3">
+                      <div className="space-y-2 sm:space-y-3 flex-1 min-w-0">
                         <div>
-                          <h4 className="font-sans text-xl font-black text-primary">Noemi Camero</h4>
+                          <h4 className="font-sans text-lg sm:text-xl font-black text-primary">Noemi Camero</h4>
                           <p className="font-sans text-xs uppercase tracking-wide text-secondary mt-1">
                             Customer Success Lead
                           </p>
@@ -377,10 +377,10 @@ export default function ServicesPage() {
                       </div>
                     </div>
                   </div> */}
-                  <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
-                    <div className="flex flex-col sm:flex-row items-start gap-4">
+                  <div className="rounded-2xl border border-border bg-page p-4 sm:p-6 shadow-sm">
+                    <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                       <div
-                        className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all"
+                        className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all flex-shrink-0"
                         onClick={() => openModal("/images/team/mariel-jasmin-orais.jpeg", "Mariel Jasmin Orais headshot")}
                       >
                         <img
@@ -390,9 +390,9 @@ export default function ServicesPage() {
                           loading="lazy"
                         />
                       </div>
-                      <div className="space-y-3">
+                      <div className="space-y-2 sm:space-y-3 flex-1 min-w-0">
                         <div>
-                          <h4 className="font-sans text-xl font-black text-primary">Mariel Jasmin Orais</h4>
+                          <h4 className="font-sans text-lg sm:text-xl font-black text-primary">Mariel Jasmin Orais</h4>
                           <p className="font-sans text-xs uppercase tracking-wide text-secondary mt-1">
                             Product & Delivery Specialist
                           </p>
@@ -408,10 +408,10 @@ export default function ServicesPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-2xl border border-border bg-page p-6 shadow-sm">
-                    <div className="flex flex-col sm:flex-row items-start gap-4">
+                  <div className="rounded-2xl border border-border bg-page p-4 sm:p-6 shadow-sm">
+                    <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                       <div
-                        className="h-24 w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all"
+                        className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all flex-shrink-0"
                         onClick={() => openModal("/images/team/drexter-sembreno.jpeg", "Drexter Sembreno headshot")}
                       >
                         <img
@@ -421,9 +421,9 @@ export default function ServicesPage() {
                           loading="lazy"
                         />
                       </div>
-                      <div className="space-y-3">
+                      <div className="space-y-2 sm:space-y-3 flex-1 min-w-0">
                         <div>
-                          <h4 className="font-sans text-xl font-black text-primary">Drexter Sembreno</h4>
+                          <h4 className="font-sans text-lg sm:text-xl font-black text-primary">Drexter Sembreno</h4>
                           <p className="font-sans text-xs uppercase tracking-wide text-secondary mt-1">
                             Marketing
                           </p>
@@ -439,7 +439,7 @@ export default function ServicesPage() {
                       </div>
                     </div>
                   </div>
-                </Grid>
+                </div>
               </div>
 
               <div className="max-w-prose mx-auto">

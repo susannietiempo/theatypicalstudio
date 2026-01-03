@@ -9,10 +9,10 @@ interface HeadingProps {
 }
 
 const headingClasses = {
-  1: "text-4xl md:text-6xl font-black tracking-tight",
-  2: "text-3xl md:text-5xl font-black tracking-tight",
-  3: "text-2xl md:text-3xl font-black tracking-tight",
-  4: "text-xl md:text-2xl font-black tracking-tight",
+  1: "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight",
+  2: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-tight",
+  3: "text-xl sm:text-2xl md:text-3xl font-black tracking-tight leading-tight",
+  4: "text-lg sm:text-xl md:text-2xl font-black tracking-tight leading-tight",
 };
 
 export function Heading({

@@ -21,21 +21,21 @@ export default function Home() {
       <PageConnections />
       <Header />
       {/* 1. Hero Section */}
-      <section className="relative overflow-hidden bg-dark text-inverse min-h-screen flex items-center">
+      <section className="relative overflow-hidden bg-dark text-inverse min-h-screen flex items-center pt-20 md:pt-0">
         <HeroBackground />
-        <Container className="relative z-10">
+        <Container className="relative z-10 py-12 md:py-0">
           <Reveal>
-            <div className="space-y-6 max-w-2xl">
-              <h1 className="font-sans text-4xl md:text-6xl font-black tracking-tight text-inverse">
+            <div className="space-y-4 sm:space-y-6 max-w-2xl">
+              <h1 className="font-sans text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-inverse leading-tight">
                 Thoughtful systems. <span className="text-accent">Human outcomes.</span>
               </h1>
-              <p className="font-sans text-lg md:text-xl font-medium text-inverse">
+              <p className="font-sans text-base sm:text-lg md:text-xl font-medium text-inverse leading-relaxed">
                 For teams whose workflows don&apos;t fit templates—we build custom solutions that make the work hold up.
               </p>
-              <p className="font-sans text-base md:text-lg text-inverse opacity-60">
+              <p className="font-sans text-sm sm:text-base md:text-lg text-inverse opacity-60 leading-relaxed">
                 Long-term technology partnerships that evolve with your workflow.
               </p>
-              <div className="pt-4">
+              <div className="pt-2 sm:pt-4">
                 <CTA href="/start-a-conversation" />
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function Home() {
               </Heading>
               <Grid cols={2}>
                 <div className="space-y-4">
-                  <h3 className="font-sans text-2xl font-black text-primary">
+                  <h3 className="font-sans text-xl sm:text-2xl font-black text-primary">
                     This is for you if:
                   </h3>
                   <ul className="space-y-3 font-serif text-base text-secondary">
@@ -136,7 +136,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="space-y-4">
-                  <h3 className="font-sans text-2xl font-black text-primary">
+                  <h3 className="font-sans text-xl sm:text-2xl font-black text-primary">
                     This is not for you if:
                   </h3>
                   <ul className="space-y-3 font-serif text-base text-secondary">
@@ -184,8 +184,8 @@ export default function Home() {
           <StaggerGroup>
             <Grid cols={3}>
               <StaggerItem>
-                <div className="bg-page rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border">
-                  <h3 className="font-sans text-xl font-black text-primary mb-3">
+                <div className="bg-page rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow border border-border">
+                  <h3 className="font-sans text-lg sm:text-xl font-black text-primary mb-2 sm:mb-3">
                     Rebuilding a Core System
                   </h3>
                   <p className="font-serif text-base text-secondary mb-4">
@@ -203,8 +203,8 @@ export default function Home() {
                 </div>
               </StaggerItem>
               <StaggerItem>
-                <div className="bg-page rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border">
-                  <h3 className="font-sans text-xl font-black text-primary mb-3">
+                <div className="bg-page rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow border border-border">
+                  <h3 className="font-sans text-lg sm:text-xl font-black text-primary mb-2 sm:mb-3">
                     Designing a New Platform
                   </h3>
                   <p className="font-serif text-base text-secondary mb-4">
@@ -221,8 +221,8 @@ export default function Home() {
                 </div>
               </StaggerItem>
               <StaggerItem>
-                <div className="bg-page rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border">
-                  <h3 className="font-sans text-xl font-black text-primary mb-3">
+                <div className="bg-page rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow border border-border">
+                  <h3 className="font-sans text-lg sm:text-xl font-black text-primary mb-2 sm:mb-3">
                     Evolving an Existing Product
                   </h3>
                   <p className="font-serif text-base text-secondary mb-4">

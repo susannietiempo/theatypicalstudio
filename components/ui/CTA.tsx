@@ -9,7 +9,7 @@ interface CTAProps {
 
 export function CTA({ href, className, variant = "primary" }: CTAProps) {
   const baseClasses =
-    "inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
+    "inline-flex items-center justify-center rounded-xl px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 min-h-[44px] touch-manipulation";
 
   if (variant === "primary") {
     return (

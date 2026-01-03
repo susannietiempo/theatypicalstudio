@@ -13,9 +13,9 @@ export function TextBlock({
   size = "base",
 }: TextBlockProps) {
   const sizeClasses = {
-    lg: "text-lg leading-relaxed",
-    base: "text-base leading-relaxed",
-    sm: "text-sm leading-relaxed",
+    lg: "text-base sm:text-lg leading-relaxed",
+    base: "text-sm sm:text-base leading-relaxed",
+    sm: "text-xs sm:text-sm leading-relaxed",
   };
 
   return (

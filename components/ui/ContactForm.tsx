@@ -68,13 +68,13 @@ export function ContactForm({ className }: ContactFormProps) {
     return (
       <div
         className={cn(
-          "bg-surface rounded-2xl p-8 md:p-12 text-center space-y-4",
+          "bg-surface rounded-2xl p-6 sm:p-8 md:p-12 text-center space-y-4",
           className
         )}
       >
-        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-4">
+        <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-accent/10 mb-4">
           <svg
-            className="w-8 h-8 text-accent"
+            className="w-7 h-7 sm:w-8 sm:h-8 text-accent"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -87,10 +87,10 @@ export function ContactForm({ className }: ContactFormProps) {
             />
           </svg>
         </div>
-        <h3 className="font-sans text-2xl font-black text-primary">
+        <h3 className="font-sans text-xl sm:text-2xl font-black text-primary">
           Message sent
         </h3>
-        <p className="font-serif text-base text-secondary max-w-md mx-auto">
+        <p className="font-serif text-sm sm:text-base text-secondary max-w-md mx-auto">
           We&apos;ll review your message and get back to you within a few days. 
           We appreciate you taking the time to reach out.
         </p>
@@ -101,7 +101,7 @@ export function ContactForm({ className }: ContactFormProps) {
   return (
     <form
       onSubmit={handleSubmit}
-      className={cn("bg-surface rounded-2xl p-8 md:p-12 space-y-6", className)}
+      className={cn("bg-surface rounded-2xl p-5 sm:p-8 md:p-12 space-y-5 sm:space-y-6", className)}
     >
       <div className="space-y-4">
         <div>
@@ -118,7 +118,7 @@ export function ContactForm({ className }: ContactFormProps) {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-base text-primary placeholder:text-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+            className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-base text-primary placeholder:text-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors touch-manipulation"
             placeholder="Your name"
           />
         </div>
@@ -137,7 +137,7 @@ export function ContactForm({ className }: ContactFormProps) {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-base text-primary placeholder:text-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+            className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-base text-primary placeholder:text-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors touch-manipulation"
             placeholder="your.email@example.com"
           />
         </div>
@@ -155,7 +155,7 @@ export function ContactForm({ className }: ContactFormProps) {
             name="project"
             value={formData.project}
             onChange={handleChange}
-            className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-base text-primary placeholder:text-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors"
+            className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-base text-primary placeholder:text-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors touch-manipulation"
             placeholder="Brief description of your project or situation"
           />
         </div>
@@ -174,25 +174,25 @@ export function ContactForm({ className }: ContactFormProps) {
             onChange={handleChange}
             required
             rows={6}
-            className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-base text-primary placeholder:text-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors resize-none"
+            className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-base text-primary placeholder:text-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors resize-none touch-manipulation"
             placeholder="Tell us about what you're looking for, any questions you have, or what you'd like to explore together."
           />
         </div>
       </div>
 
       {error && (
-        <div className="rounded-xl bg-red-50 border border-red-200 p-4">
+        <div className="rounded-xl bg-red-50 border border-red-200 p-3 sm:p-4">
           <p className="text-sm text-red-800 font-sans">
             {error}
           </p>
         </div>
       )}
 
-      <div className="pt-4">
+      <div className="pt-2 sm:pt-4">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold bg-accent text-onAccent hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+          className="inline-flex items-center justify-center rounded-xl px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-semibold bg-accent text-onAccent hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed min-h-[44px] touch-manipulation w-full sm:w-auto"
         >
           {isSubmitting ? "Sending..." : "Send message"}
         </button>
