@@ -19,6 +19,11 @@ const merriweather = Merriweather({
 export const metadata: Metadata = {
   title: "The Atypical Studio",
   description: "Custom software studio focused on long-term partnership, clarity, and thoughtful systems.",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

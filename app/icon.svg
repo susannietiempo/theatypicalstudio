@@ -1,0 +1,13 @@
+<svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle for better visibility -->
+  <circle cx="50" cy="50" r="48" fill="#1A2332"/>
+  
+  <!-- Left vertical bar - thicker -->
+  <rect x="12" y="22" width="18" height="56" fill="#F5F3EF" rx="2"/>
+  
+  <!-- Center rotated square - larger -->
+  <rect x="45" y="45" width="26" height="26" transform="rotate(45 50 50)" fill="#F5F3EF" rx="2"/>
+  
+  <!-- Right vertical bar - thicker -->
+  <rect x="70" y="25" width="18" height="50" fill="#F5F3EF" rx="2"/>
+</svg>
