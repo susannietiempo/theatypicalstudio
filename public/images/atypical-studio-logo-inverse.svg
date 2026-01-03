@@ -1,0 +1,6 @@
+<svg width="400" height="100" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="25" width="15" height="50" fill="#F5F3EF"/>
+  <rect x="50" y="48" width="21.21" height="21.21" transform="rotate(45 50 48)" fill="#F5F3EF"/>
+  <rect x="70" y="28" width="15" height="48" fill="#F5F3EF"/>
+  <text x="112" y="62" fill="#F5F3EF" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" letter-spacing="-0.4">The Atypical Studio</text>
+</svg>

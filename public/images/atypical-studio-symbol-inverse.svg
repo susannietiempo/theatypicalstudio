@@ -1,0 +1,8 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left vertical bar -->
+  <rect x="15" y="25" width="15" height="50" fill="#F5F3EF"/>
+  <!-- Center rotated square -->
+  <rect x="50" y="48" width="21.21" height="21.21" transform="rotate(45 50 48)" fill="#F5F3EF"/>
+  <!-- Right vertical bar -->
+  <rect x="70" y="28" width="15" height="48" fill="#F5F3EF"/>
+</svg>
