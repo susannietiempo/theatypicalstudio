@@ -240,12 +240,13 @@ export default function ServicesPage() {
                     <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                       <div
                         className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all flex-shrink-0"
-                        onClick={() => openModal("/images/team/susannie-tiempo.jpeg", "Susannie Tiempo headshot")}
+                        onClick={() => openModal("/images/team/susannie-tiempo.jpg", "Susannie Tiempo headshot")}
                       >
                         <img
-                          src="/images/team/susannie-tiempo.jpeg"
+                          src="/images/team/susannie-tiempo.jpg"
                           alt="Susannie Tiempo headshot"
                           className="h-full w-full object-cover"
+                          style={{ objectPosition: 'center 10%' }}
                           loading="lazy"
                         />
                       </div>
@@ -271,12 +272,13 @@ export default function ServicesPage() {
                     <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                       <div
                         className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all flex-shrink-0"
-                        onClick={() => openModal("/images/team/grethel-bacundator.jpeg", "Grethel Bacunador headshot")}
+                        onClick={() => openModal("/images/team/grethel-bacundator.png", "Grethel Bacunador headshot")}
                       >
                         <img
-                          src="/images/team/grethel-bacundator.jpeg"
+                          src="/images/team/grethel-bacundator.png"
                           alt="Grethel Bacunador headshot"
                           className="h-full w-full object-cover"
+                          style={{ objectPosition: 'center 35%' }}
                           loading="lazy"
                         />
                       </div>
@@ -302,12 +304,13 @@ export default function ServicesPage() {
                     <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                       <div
                         className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all flex-shrink-0"
-                        onClick={() => openModal("/images/team/noemi-camaro.jpeg", "Noemi Camero headshot")}
+                        onClick={() => openModal("/images/team/noemi-camaro.png", "Noemi Camero headshot")}
                       >
                         <img
-                          src="/images/team/noemi-camaro.jpeg"
+                          src="/images/team/noemi-camaro.png"
                           alt="Noemi Camero headshot"
                           className="h-full w-full object-cover"
+                          style={{ objectPosition: 'center 20%' }}
                           loading="lazy"
                         />
                       </div>
@@ -387,6 +390,7 @@ export default function ServicesPage() {
                           src="/images/team/mariel-jasmin-orais.jpeg"
                           alt="Mariel Jasmin Orais headshot"
                           className="h-full w-full object-cover"
+                          style={{ objectPosition: 'center 15%' }}
                           loading="lazy"
                         />
                       </div>
@@ -412,12 +416,13 @@ export default function ServicesPage() {
                     <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                       <div
                         className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 rounded-full border border-border bg-surface overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all flex-shrink-0"
-                        onClick={() => openModal("/images/team/drexter-sembreno.jpeg", "Drexter Sembreno headshot")}
+                        onClick={() => openModal("/images/team/drexter-sembreno.png", "Drexter Sembreno headshot")}
                       >
                         <img
-                          src="/images/team/drexter-sembreno.jpeg"
+                          src="/images/team/drexter-sembreno.png"
                           alt="Drexter Sembreno headshot"
                           className="h-full w-full object-cover"
+                          style={{ objectPosition: 'center 15%' }}
                           loading="lazy"
                         />
                       </div>

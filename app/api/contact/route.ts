@@ -35,10 +35,13 @@ export async function POST(request: NextRequest) {
     }
 
     // Get the recipient email from environment variable, or use a default
-    const recipientEmail = process.env.CONTACT_EMAIL || "hello@theatypicalstudio.com";
+    // Note: In Resend test mode, you can only send to your own email (susannie.tiempo@gmail.com)
+    // To send to other emails, verify a domain at resend.com/domains
+    const recipientEmail = process.env.CONTACT_EMAIL || "susannie.tiempo@gmail.com";
     
-    // Get the sender email from environment variable, or use Resend's test domain
-    const fromEmail = process.env.FROM_EMAIL || "onboarding@resend.dev";
+    // Get the sender email from environment variable
+    // tiempovisa.com is verified, so we can use info@tiempovisa.com
+    const fromEmail = process.env.FROM_EMAIL || "info@tiempovisa.com";
 
     // Escape HTML to prevent XSS
     const escapeHtml = (text: string) => {
